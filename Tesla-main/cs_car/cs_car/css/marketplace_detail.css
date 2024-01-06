@@ -1,0 +1,97 @@
+body {
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+}
+.post_header{
+    text-align: center;
+}
+.nav-container{
+    background-color: #ccc;
+}
+.container {
+    width: 1200px;
+    margin: 1rem auto; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+.post_container{
+    background-color: #f0f0f0;
+}
+.post_item {
+    padding: 10px;
+}
+.post_detail{
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.post_photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.bt{
+    display: flex; 
+    gap: 10px; 
+}
+
+.delete-button {
+    background-color: #FF0000;
+    color: #FFFFFF; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.approve-button {
+    background-color: #008000; 
+    color: #FFFFFF; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.edit-button {
+    background-color: rgb(76, 76, 179); 
+    color: #FFFFFF; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+/* 
+@media (max-width: 900px) {
+    .post_item > .post_photo{
+        display: block; 
+        text-align: center; 
+        margin: 20px 0;
+    }
+    .post_detail{
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .post_item > .post_photo{
+        display: block; 
+        text-align: center; 
+        margin: 20px 0;
+    }
+    .post_detail{
+        padding: 0 20px;
+    }
+
+} */
+

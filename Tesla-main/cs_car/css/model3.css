@@ -1,0 +1,377 @@
+@media screen and (max-width: 768px) {
+
+    #pc {
+        display: none;
+    }
+
+    #mobile {
+        align-items: center;
+        text-align: center;
+    }
+
+    .specbox {
+        align-items: baseline;
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+        overflow-x: auto;
+        padding: 20px 20px;
+    }
+
+    .specbox ol {
+        margin: 0 1rem;
+    }
+
+    .mini {
+        text-align: left;
+    }
+
+    .specbox .specbox li #range {
+        display: none;
+    }
+
+    li {
+        text-decoration: none;
+    }
+
+    .specbox {
+        align-items: baseline;
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+        overflow-x: auto;
+    }
+
+    .specbox li {
+        list-style: none;
+        text-align: center;
+    }
+
+    span .test {
+        align-items: center;
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .box2,
+    .box3,
+    .box4,
+    .box5 {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .box4 .specbox .mini ul li {
+        text-align: left;
+    }
+
+    .box5 .specbox .mini ul li {
+        text-align: left;
+    }
+
+    .submitbuy {
+        align-items: center;
+        text-align: center;
+    }
+
+
+
+    #ADD_EA_MO,
+    #ADD_FSD_MO {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    #ADD_SUM {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+        width: 80%;
+    }
+
+
+    #ADD_EA:hover,
+    #ADD_FSD:hover,
+    #AAD_SUM:hover {
+        background-color: #0056b3;
+    }
+
+
+    #ADD_EA:active,
+    #ADD_FSD:active {
+        background-color: #003f80;
+    }
+    input[name="Tel"] {
+        background-color: #f4f4f4;
+        border: 1px solid #ddd; 
+        border-radius: 5px; 
+        padding: 6px;
+        color: #333; /
+    }
+    
+}
+
+
+@media screen and (min-width:1024px) {
+    #mobile {
+        display: none;
+    }
+
+    * {
+        outline-offset: 2px;
+        font-size: 14px;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .container {
+        display: flex;
+        height: 100vh;
+    }
+
+
+    .left-section {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex: 0 0 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        flex-direction: column;
+    }
+
+    .pic {
+        text-align: center;
+        position: relative;
+    }
+
+    .image-container {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .pic img {
+        width: 100%;
+        display: block;
+    }
+
+    .picbutton {
+        position: absolute;
+        left: 0;
+        right: 0;
+        display: flex;
+
+        justify-content: space-between;
+    }
+
+    .arrow-button {
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: #000000;
+        cursor: pointer;
+        margin: 0 10px;
+        transition: color 0.3s;
+    }
+
+    .arrow-button:hover {
+        color: #007bff;
+    }
+
+
+    .footer {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .right-section {
+        padding: 10px;
+        flex: 1;
+        overflow: auto;
+    }
+
+
+    h1 {
+        text-align: center;
+    }
+
+    .specbox {
+        align-items: baseline;
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+        overflow-x: auto;
+
+    }
+
+    .specbox li {
+        list-style: none;
+        text-align: center;
+    }
+
+
+    span .test {
+        align-items: center;
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .radio-input {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .bt {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding: 10px 10px;
+    }
+
+    .boxdetail {
+        text-align: left;
+        padding: 10px 10px;
+    }
+
+    .boxdetail ul {
+        list-style-position: outside;
+        padding-left: 20px;
+    }
+
+    .boxheader {
+        text-align: center;
+    }
+
+    .bt1,
+    .bt2,
+    .bt3,
+    .bt4,
+    .bt5 {
+        margin: 0 1rem;
+    }
+
+    /* ปุ่ม radio*/
+    input[type="radio"] {
+        margin-right: 5px;
+        border: 2px solid #007bff;
+        background-color: #007bff;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+    }
+
+    /* เพิ่มสไตล์เมื่อปุ่มรัดกล่องถูกเลือก (ใช้ :checked) */
+    input[type="radio"]:checked {
+        background-color: #007bff;
+        border: 2px solid #007bff;
+        color: white;
+    }
+
+    /*  */
+    #ADD_EA,
+    #ADD_FSD {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+
+    /* #ADD_FSD {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+        width: 100%;
+    } */
+    .submitbuy {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding: 8px 20px;
+    }
+
+    #ADD_EA:hover,
+    #ADD_FSD:hover {
+        background-color: #0056b3;
+    }
+
+
+    #ADD_EA:active,
+    #ADD_FSD:active {
+        background-color: #003f80;
+    }
+
+    
+    .picbutton {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .arrow-button {
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: #000000;
+        cursor: pointer;
+        margin: 0 10px;
+        transition: color 0.3s;
+    }
+
+    .arrow-button:hover {
+        color: #007bff;
+    }
+    #ADD_SUM {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+        width: 80%;
+    }
+
+    #ADD_EA:hover,
+    #ADD_FSD:hover,
+    #AAD_SUM:hover {
+        background-color: #0056b3;
+    }
+
+    input[name="Tel"] {
+        background-color: #f4f4f4;
+        border: 1px solid #ddd; 
+        border-radius: 5px; 
+        padding: 6px;
+        color: #333; /
+    }
+}

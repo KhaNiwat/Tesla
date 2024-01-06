@@ -1,0 +1,15 @@
+.nav-container {
+    background-color: rgb(255, 255, 255);
+    
+}
+
+
+
+main {
+    display: flex;
+    justify-content: center; /* จัดให้อยู่กลางตามแนวนอน */
+    align-items: center; /* จัดให้อยู่กลางตามแนวตั้ง */
+    width: 800px; /* ลดความกว้างเป็น 400px */
+    margin: 0 auto; /* จัดให้อยู่กลางตามแนวนอน */
+}
+  

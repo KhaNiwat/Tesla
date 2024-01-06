@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;300&family=Roboto+Slab:wght@300&display=swap');
+/* Universal Selector */
+*{
+  font-family: 'Noto Sans Thai', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+/* Type Selector */
+body {
+  margin: 0 0;
+  padding: 0 0;
+}
+/* Class Selector */
+.nav-container {
+  position: fixed;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  right: 0;
+  left: 0;
+  padding: 10px 20px;
+  z-index: 1;
+}
+/* ID Selector */
+#logo a{
+  font-family: "TESLA";
+  color: #171A20;
+  text-decoration: none;
+}
+.BarMenu {
+  list-style: none;
+  display: flex;
+  text-align: center;
+}
+
+/* 36 and 44 is same */
+.BarMenu li  a,
+.adminName{
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #171A20;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+ 
+}
+
+.LoginIcon{
+  list-style: none;
+  display: flex;
+  margin-right: 1rem;
+}
+.LoginIcon a{
+  text-align: center;
+  color: #171A20;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+/* Pseudo-Class Selector */
+.BarMenu a:hover {
+  background-color: #ececec;
+  border-radius: 4px;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu-button {
+  display: none;
+}
+
+.scetion{
+  display: none;
+}
+
+.mobileMenu {
+  display: none;
+  
+}
+
+::-webkit-scrollbar {
+  width: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 5px; /
+}
+
+::-webkit-scrollbar-track {
+  background: #eee; 
+}
+
+
+
+/* Desktop */
+@media screen and (max-width: 1024px) {
+  #logo a {
+    font-size: 20px;
+  }
+
+  .nav-container {
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .mobile-menu-button {
+    display: none;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 800px) {}
+
+
+/* Mobile */
+ @media screen and (max-width: 768px) {
+  #fa-user-circle-o{
+    display: none;
+  }
+  .logo a {
+    font-size: 20px;
+  }
+  .nav-container {
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .BarMenu a {
+    display: none;
+  }
+  .LoginIcon {
+    display: none;
+  }
+  .mobile-menu-button {
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: #0000000D;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  #mobileMenu{
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 30vh;
+    height: 100vh;
+    padding: 10px; 
+    z-index: 1;
+  }
+
+  #mobileMenu button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  
+
+  /* สไตล์เมนูเมื่อแสดงผล */
+  #mobileMenu.show {
+    display: block;
+  }
+
+  .fa-times:before {
+    font-size: 20px;
+  }
+
+  .mobile-menu a ,p{
+    text-align: left;
+    display: block;
+    color: #171A20;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background-color 0.3s, color 0.3s;
+    
+  }
+
+  .mobile-menu a:hover {
+    background-color: #ececec;
+    border-radius: 4px;
+  }
+
+  .mobile-menu-button::before {
+    display: inline-block;
+  }
+}

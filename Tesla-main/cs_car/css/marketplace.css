@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;300&family=Roboto+Slab:wght@300&display=swap');
+
+/* Universal Selector */
+* {
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    padding: 0 0;
+    background-color: #f7f7f7;
+}
+
+.nav-container {
+    background-color: rgb(255, 0, 0);
+    position: fixed;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    right: 0;
+    left: 0;
+    padding: 10px 20px;
+    z-index: 1;
+}
+
+nav .nav-container .BarMenu{
+    align-items: center;
+    justify-content: center;
+}
+
+nav .nav-container a,
+nav .nav-container .BarMenu li a,
+nav .nav-container #logo a,
+nav .nav-container .BarMenu li {
+    color: #ffffff;
+}
+nav .nav-containe .mobile-menu{
+    color: #ffffff;
+}
+
+nav .nav-container a:hover {
+    color: #000000;
+}
+
+nav .nav-container .BarMenu li a:hover {
+    color: #000000;
+}
+
+.post_header {
+    margin: auto 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pos,
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.pos p {
+    margin-right: 10px;
+}
+
+.search-container input {
+    margin-left: 10px;
+}
+
+h1 {
+    color: #333;
+}
+
+.post_header {
+    text-align: center;
+    display: flex;
+}
+
+.pos {
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.pos>p,
+.pos a {
+    text-decoration: none;
+    font-family: 'Noto Sans Thai', sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 24px;
+    margin: 0 1rem;
+}
+
+.btn {
+    padding: 0px 0px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 4px;
+}
+.approve-button{
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 6px 12px;
+    width: 100px;
+}
+
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+
+
+#searchInput {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    width: 200px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+
+#searchInput:hover {
+    border-color: #555;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    width: 80%;
+    padding: 20px;
+    margin: 1rem auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.post_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.post_item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0px;
+    padding: 0px;
+    width: 250px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+
+.post_container a {
+    color: black;
+    text-decoration: none;
+}
+
+.post_item:hover {
+    outline: 1px solid black;
+}
+
+.post_photo img {
+    padding: 20px;
+    width: 100%;
+
+}
+
+.post_detail {
+    padding: 0 20px;
+    font-size: 16px;
+}
+/* css selector child */
+.pos>p,
+    .pos a {
+        font-size: 24px;
+        font-weight: bolder;
+    }
+
+
+/* มือถือ */
+@media (max-width: 768px) {
+    nav .nav-container .BarMenu{
+        align-items: center;
+        justify-content: center;
+    }
+    
+    nav .nav-container a,
+    nav .nav-container .BarMenu li a,
+    nav .nav-container .BarMenu li , nav .nav-containe .mobile-menu{
+        color: #000000;
+    }nav .nav-container #logo a{
+        color: #ffffff;
+    }
+    
+    nav .nav-container a:hover {
+        color: #000000;
+    }
+    header{
+        margin: 50px auto;
+        width: 95%;
+    }
+    .post_container {
+        width: 95%;
+        margin: 0 auto; 
+    }
+    main {
+        width: 95%;
+        margin: 0 auto;
+    }  
+    .post_item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        width: 100%;
+    }
+    .post_header {
+        margin: 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pos,
+    .search-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pos p,
+    .search-container input {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    
+    
+
+    .post_photo img {
+        width: 100%;
+    }
+
+    .pos>p,
+    .pos a {
+        font-size: 20px;
+    }
+
+    .post_container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .post_item {
+        text-align: center;
+    }
+
+    .post_photo img {
+        padding: 10px;
+    }
+
+    .post_detail {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1023px) and (min-width:768px) {
+    nav .nav-container .BarMenu{
+        align-items: center;
+        justify-content: center;
+    }
+    
+    nav .nav-container a,
+    nav .nav-container .BarMenu li a,
+    nav .nav-container .BarMenu li , nav .nav-containe .mobile-menu{
+        color: #000000;
+    }nav .nav-container #logo a{
+        color: #ffffff;
+    }
+    
+    nav .nav-container a:hover {
+        color: #000000;
+    }
+    header {
+        margin: 50px auto;
+        width: 95%;
+      }
+      
+      .post_container {
+        width: 95%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Create three equal columns */
+        gap: 10px; /* Gap between grid items (adjust as needed) */
+      }
+      
+      main {
+        width: 100%;
+        margin: 0 auto;
+      }
+      
+      .post_item {
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        width: 100%;
+      }
+      
+}
+/* pc */
+
+@media screen and (min-width: 1024px) {
+
+    header {
+        margin: 50px auto;
+        width: 80%;
+    }
+  
+    .post_container {
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px; 
+    }
+  
+    main {
+        width: 100%;
+        margin: 0 auto;
+    }
+  
+    .post_item {
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        width: 100%;
+        padding: 2px 16px;
+    }
+  }
+  
